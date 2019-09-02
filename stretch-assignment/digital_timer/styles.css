@@ -1,14 +1,48 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
 }
 
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 20rem;
+  color:black;
 }
 
 .redDigit {
   color: red;
 }
+
+button {
+  color: black;
+  border: solid 1px black;
+  font-size: 2rem;
+  padding: 12px 12px;
+  width: 100px;
+  margin: 10px;
+  outline: none;
+  }
+
+#startBtn {
+  background-color: green;
+}
+#resetBtn {
+  background-color: yellow;
+}
+#stopBtn {
+  background-color: red;
+}
+
+  button:hover {
+    transition: all 0.5s ease-in-out;
+    color: white;
+  }

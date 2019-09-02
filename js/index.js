@@ -104,7 +104,7 @@ for (let i = 0; i < navBar.length;i++){
   greenTextClass.style.color = "green";
 }
 
-//Append task and prepend
+//Append and prepend
 let navTags = document.querySelector('nav');
 let navLinkOne = document.createElement('a');
 navLinkOne.innerText = 'Fun!'
