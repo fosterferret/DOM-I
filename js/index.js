@@ -72,3 +72,16 @@ topContentParagraphs[1].textContent = siteContent["main-content"]["about-content
 const middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+//Bottom content
+const bottomContentHeaders = document.querySelectorAll(".main-content .bottom-content h4");
+bottomContentHeaders[0].textContent = siteContent["main-content"]["services-h4"];
+bottomContentHeaders[1].textContent = siteContent["main-content"]["product-h4"];
+bottomContentHeaders[2].textContent = siteContent["main-content"]["vision-h4"];
+
+const bottomParagraphs= document.querySelectorAll(".main-content .bottom-content p");
+bottomParagraphs[0].textContent = siteContent["main-content"]["services-content"];
+bottomParagraphs[1].textContent = siteContent["main-content"]["product-content"];
+bottomParagraphs[2].textContent = siteContent["main-content"]["vision-content"];
+
+
+
