@@ -41,6 +41,13 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//navigation
+const navBar = document.querySelectorAll("nav a");
+for (let i = 0; i < navBar.length; i++){
+  navBar[i].innerHTML = siteContent["nav"]["nav-item-" + (i + 1)];
+};
+
+
 //CTA text
 let ctaText = document.querySelector(".cta-text h1");
 ctaText.innerHTML = siteContent["cta"]["h1"]
