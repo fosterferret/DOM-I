@@ -47,6 +47,3 @@ const headerImage = document.querySelector('img');
 headerImage.setAttribute('src', 'img/header-img.png');
 
 //Set header text
-const headerText = document.querySelector('cta');
-headerText.textContent = 'Dom Is Awesome';
-console.log(headerText);
