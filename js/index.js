@@ -41,9 +41,14 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//CTA text
+let ctaText = document.querySelector(".cta-text h1");
+ctaText.innerHTML = siteContent["cta"]["h1"]
 
-//Set header image
-const headerImage = document.querySelector('img');
-headerImage.setAttribute('src', 'img/header-img.png');
+//CTA button
+let ctaButton = document.querySelector(".cta-text button");
+ctaButton.innerHTML = siteContent["cta"]["button"];
 
-//Set header text
+//CTA image
+const ctaImage = document.getElementById('cta-img');
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
