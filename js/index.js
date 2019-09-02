@@ -41,12 +41,11 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//navigation
+//Navigation
 const navBar = document.querySelectorAll("nav a");
 for (let i = 0; i < navBar.length; i++){
   navBar[i].innerHTML = siteContent["nav"]["nav-item-" + (i + 1)];
 };
-
 
 //CTA text
 let ctaText = document.querySelector(".cta-text h1");
@@ -59,3 +58,17 @@ ctaButton.innerHTML = siteContent["cta"]["button"];
 //CTA image
 const ctaImage = document.getElementById('cta-img');
 ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//Main content
+//Top content
+const topContentHeaders = document.querySelectorAll(".main-content .top-content h4");
+topContentHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+topContentHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+
+const topContentParagraphs = document.querySelectorAll(".main-content .top-content p")
+topContentParagraphs[0].textContent = siteContent["main-content"]["features-content"];
+topContentParagraphs[1].textContent = siteContent["main-content"]["about-content"];
+
+const middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
