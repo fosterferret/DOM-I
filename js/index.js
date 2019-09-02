@@ -97,4 +97,23 @@ contactDetails[2].textContent = siteContent["contact"]["email"];
 const footerText = document.querySelector("footer p")
 footerText.textContent =  siteContent["footer"]["copyright"];
 
+//Change nav links color
+for (let i = 0; i < navBar.length;i++){
+  navBar[i].classList.add("greenTextClass");
+  const greenTextClass = document.querySelectorAll('.greenTextClass')[i];
+  greenTextClass.style.color = "green";
+}
 
+//Append task and prepend
+let navTags = document.querySelector('nav');
+let navLinkOne = document.createElement('a');
+navLinkOne.innerText = 'Fun!'
+navLinkOne.href = '#'
+
+navTags.appendChild(navLinkOne);
+
+let navLinkTwo = document.createElement('a');
+navLinkTwo.innerText = 'Exciting!'
+navLinkTwo.href = '#'
+
+navTags.insertBefore(navLinkTwo, navTags.childNodes[0]);
