@@ -48,11 +48,12 @@ for (let i = 0; i < navBar.length; i++){
 };
 
 //CTA text
-let ctaText = document.querySelector(".cta-text h1");
+siteContent["cta"]["h1"] = "Dom<br>Is<br>Awesome";
+const ctaText = document.querySelector(".cta-text h1");
 ctaText.innerHTML = siteContent["cta"]["h1"]
 
 //CTA button
-let ctaButton = document.querySelector(".cta-text button");
+const ctaButton = document.querySelector(".cta-text button");
 ctaButton.innerHTML = siteContent["cta"]["button"];
 
 //CTA image
