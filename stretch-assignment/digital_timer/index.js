@@ -35,10 +35,10 @@ window.onload = function() {
         secondOnesCount.classList.remove("redDigit");
         secondTensCount.classList.remove("redDigit");
       
-        msTens = "-"; 
-        msHundreds = "-"; 
-        secondOnes = "-"; 
-        secondTens = "-";
+        msTens = "0"; 
+        msHundreds = "0"; 
+        secondOnes = "0"; 
+        secondTens = "0";
         msHundredsCount.innerHTML = `${msHundreds}`;
         msTensCount.innerHTML = `${msTens}`;
         secondOnesCount.innerHTML = `${secondOnes}`;
